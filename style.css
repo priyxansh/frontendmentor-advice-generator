@@ -35,12 +35,15 @@ body {
     align-items: center;
     position: relative;
     margin-inline: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 15px 36px,
+        rgba(0, 0, 0, 0.05) 0px 5px 20px;
 }
 .card > h1 {
     color: var(--neon-green);
     text-transform: uppercase;
     font-size: 0.925rem;
-    font-size: clamp(0.725rem, 2vw, 0.925rem);
+    font-size: clamp(0.675rem, 2vw, 0.925rem);
     letter-spacing: 4px;
 }
 .advice {
@@ -53,9 +56,8 @@ body {
 .divider img {
     width: 100%;
 }
-.divider .desktop{
+.divider .desktop {
     margin-block: 1rem;
-
 }
 .divider .mobile {
     display: none;
@@ -72,7 +74,7 @@ body {
     translate: 0 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     .divider .mobile {
         display: revert;
     }
